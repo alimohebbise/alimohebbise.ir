@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Hero from './components/Hero'
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -9,10 +10,7 @@ function App() {
       <Header theme={theme} setTheme={setTheme} />
 
       <main>
-        <section id="hero">
-          <h1>Hi, I'm Ali Mohebbi</h1>
-          <p>Software Developer & Web Developer</p>
-        </section>
+        <Hero />
 
         <section id="about">
           <h2>About Me</h2>

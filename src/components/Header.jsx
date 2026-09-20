@@ -5,7 +5,7 @@ function Header({ theme, setTheme }) {
     <header className="site-header">
       <div className="header-container">
 
-        <a href="/" className="site-logo">
+        <a href="#hero" className="site-logo">
           <span className="logo-name">Ali Mohebbi</span>
           <span className="logo-role">Software Developer</span>
         </a>

@@ -209,3 +209,128 @@ main h2 {
     padding: 80px 20px;
   }
 }
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+  min-height: calc(100vh - 76px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-greeting {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 8vw, 88px);
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--text-primary);
+}
+
+.hero h2 {
+  margin: 20px 0 24px;
+  font-size: clamp(24px, 4vw, 38px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-secondary);
+}
+
+.hero-description {
+  max-width: 650px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 160px;
+  padding: 13px 22px;
+
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-button.primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.hero-button.primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.hero-button.secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.hero-button.secondary:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: calc(100vh - 130px);
+    padding: 70px 20px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+}

@@ -84,3 +84,104 @@
 
   color: var(--text-primary);
 }
+
+/* ========================================
+   HERO THEME EFFECTS
+   ======================================== */
+
+/* PROFESSIONAL DARK */
+
+.theme-dark .hero-content {
+  position: relative;
+}
+
+.theme-dark .hero h1 {
+  letter-spacing: -2px;
+}
+
+.theme-dark .hero-description {
+  max-width: 620px;
+}
+
+
+/* MODERN LIGHT */
+
+.theme-light .hero {
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(109, 40, 217, 0.08),
+      transparent 30%
+    );
+}
+
+.theme-light .hero h1 {
+  color: var(--text-primary);
+}
+
+.theme-light .hero h2 {
+  color: var(--text-secondary);
+}
+
+.theme-light .hero-description {
+  color: var(--text-secondary);
+}
+
+
+/* MODERN DEVELOPER */
+
+.theme-developer .hero {
+  position: relative;
+}
+
+.theme-developer .hero::before {
+  content: "";
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  top: 15%;
+  right: 5%;
+
+  border-radius: 50%;
+
+  background: rgba(139, 92, 246, 0.12);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.theme-developer .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-developer .hero h1 {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #a78bfa
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+.theme-developer .hero-greeting {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.theme-developer .hero-button {
+  border-radius: 12px;
+}
+
+.theme-developer .hero-button.primary {
+  box-shadow:
+    0 0 20px rgba(139, 92, 246, 0.25);
+}
