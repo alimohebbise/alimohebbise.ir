@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Experience from './components/Experience'
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -21,9 +22,7 @@ function App() {
 
         <Projects />
 
-        <section id="experience">
-          <h2>Experience</h2>
-        </section>
+        <Experience />
 
         <section id="contact">
           <h2>Contact</h2>
