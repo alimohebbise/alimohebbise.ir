@@ -5,6 +5,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -24,9 +25,7 @@ function App() {
 
         <Experience />
 
-        <section id="contact">
-          <h2>Contact</h2>
-        </section>
+        <Contact />
       </main>
     </div>
   )
