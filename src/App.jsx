@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import About from './components/About'
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -12,9 +13,7 @@ function App() {
       <main>
         <Hero />
 
-        <section id="about">
-          <h2>About Me</h2>
-        </section>
+        <About />
 
         <section id="skills">
           <h2>Skills</h2>
