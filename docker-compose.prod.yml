@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: alimohebbise-frontend-prod
+
+    container_name: alimohebbise_frontend_prod
+
+    ports:
+      - "8080:80"
+
+    restart: unless-stopped
