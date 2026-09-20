@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
+import Skills from './components/Skills'
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -15,9 +16,7 @@ function App() {
 
         <About />
 
-        <section id="skills">
-          <h2>Skills</h2>
-        </section>
+        <Skills />
 
         <section id="projects">
           <h2>Projects</h2>
